@@ -1,0 +1,7 @@
+- Patron Repository
+- Patron Adapter (Application -> Repository)
+
+1. Video 1.
+
+ToDo 1. Pendiente Factorizar el Tipo para el ID (long) en las Operaciones ICRUD.
+ToDo 2. Pendiente Corregir el Diagrama de Arquitectura Repository -> Abstractions

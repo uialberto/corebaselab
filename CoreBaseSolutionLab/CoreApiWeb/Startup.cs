@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Uibasoft.BaseLab.Application;
+using Uibasoft.BaseLab.Repository;
 
 namespace CoreApiWeb
 {
@@ -32,6 +34,12 @@ namespace CoreApiWeb
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CoreApiWeb", Version = "v1" });
             });
+
+
+            services.AddScoped(typeof(IApplication<>), typeof(Application<>));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

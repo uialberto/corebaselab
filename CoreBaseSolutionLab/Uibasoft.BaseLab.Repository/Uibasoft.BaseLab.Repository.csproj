@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Uibasoft.BaseLab.Abstractions\Uibasoft.BaseLab.Abstractions.csproj" />
     <ProjectReference Include="..\Uibasoft.BaseLab.DataAccess\Uibasoft.BaseLab.DataAccess.csproj" />
     <ProjectReference Include="..\Uibasoft.BaseLab.Dominio\Uibasoft.BaseLab.Dominio.csproj" />
     <ProjectReference Include="..\Uibasoft.BaseLab.Services\Uibasoft.BaseLab.Services.csproj" />
