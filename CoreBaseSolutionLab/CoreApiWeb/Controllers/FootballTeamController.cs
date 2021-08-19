@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CoreApiWeb.DTOs;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -22,11 +23,19 @@ namespace CoreApiWeb.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(new FootbalTeam()
+            return Ok(_football.GetAll());
+        }
+        
+        [HttpPost]
+        public IActionResult Save(FootbalTeamDto dto)
+        {
+            var entity = new FootbalTeam()
             {
-                Name = "Oriente Petrolero",
-                Score = 100
-            });
+                Name = dto.Name,
+                Score = dto.Score
+            };
+
+            return Ok(_football.Save(entity));
         }
 
     }

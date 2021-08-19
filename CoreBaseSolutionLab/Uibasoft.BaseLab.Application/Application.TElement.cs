@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Uibasoft.BaseLab.Abstractions;
 using Uibasoft.BaseLab.Repository;
 
 namespace Uibasoft.BaseLab.Application
 {
     // Patron Adapter
-    public class Application<TElement> : IApplication<TElement>
+    public class Application<TElement> : IApplication<TElement> where TElement : IEntity
     {
         IRepository<TElement> _repo;
         public Application(IRepository<TElement> repo)

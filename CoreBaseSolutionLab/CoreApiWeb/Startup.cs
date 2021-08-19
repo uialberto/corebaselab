@@ -11,7 +11,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Uibasoft.BaseLab.Abstractions;
 using Uibasoft.BaseLab.Application;
+using Uibasoft.BaseLab.DataAccess;
 using Uibasoft.BaseLab.Repository;
 
 namespace CoreApiWeb
@@ -38,6 +40,7 @@ namespace CoreApiWeb
 
             services.AddScoped(typeof(IApplication<>), typeof(Application<>));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IDbContext<>), typeof(DbContext<>));
 
 
         }
