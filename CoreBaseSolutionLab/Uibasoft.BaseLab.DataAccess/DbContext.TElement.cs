@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,25 +8,29 @@ using Uibasoft.BaseLab.Abstractions;
 
 namespace Uibasoft.BaseLab.DataAccess
 {
-    public class DbContext<TElement> : IDbContext<TElement> where TElement : IEntity
+    // Cuando se quiera cambiar el contexto de Base de Datos de EF Propiamente Dicho (LabDBContext) Se crea un nuevo contexto por uno diferente.
+    public class DbContext<TElement> : IDbContext<TElement> where TElement : class, IEntity
     {
-        IList<TElement> _elements;
-        public DbContext()
+        DbSet<TElement> _elements;
+        LabDbContext _context;
+        public DbContext(LabDbContext context)
         {
-            _elements = new List<TElement>();
+            _context = context;
+            _elements = _context.Set<TElement>();
         }
         public void Delete(long id)
         {
-            var element = _elements.Where(ele => ele.Id.Equals(id)).FirstOrDefault();
-            if (element != null)
+            var entity = GetById(id);
+            if (entity != null)
             {
-                _elements.Remove(element);
+                _elements.Remove(entity);
+                _context.SaveChanges();
             }
         }
 
         public IList<TElement> GetAll()
         {
-            return _elements;
+            return _elements.ToList();
         }
 
         public TElement GetById(long id)
@@ -35,12 +40,9 @@ namespace Uibasoft.BaseLab.DataAccess
 
         public TElement Save(TElement element)
         {
-            if (!element.Id.Equals(0))
-            {
-                _elements.Add(element);
-            }
-
-            return element;            
+            _elements.Add(element);
+            _context.SaveChanges();
+            return element;
         }
     }
 }

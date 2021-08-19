@@ -5,3 +5,11 @@
 
 ToDo 1. Pendiente Factorizar el Tipo para el ID (long) en las Operaciones ICRUD.
 ToDo 2. Pendiente Corregir el Diagrama de Arquitectura Repository -> Abstractions
+
+2. Video 2
+
+Por que la Migracion se crea o estable bajo el assembly WebApi
+
+3. Video 3. 
+
+ToDo dotnet tool install --global dotnet-ef

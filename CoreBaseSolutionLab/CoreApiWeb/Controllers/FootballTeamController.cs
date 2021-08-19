@@ -32,7 +32,9 @@ namespace CoreApiWeb.Controllers
             var entity = new FootbalTeam()
             {
                 Name = dto.Name,
-                Score = dto.Score
+                Score = dto.Score,
+                Manager = dto.Manager,
+                CreateDate = dto.CreateDate
             };
 
             return Ok(_football.Save(entity));
