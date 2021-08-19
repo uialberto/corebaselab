@@ -5,6 +5,18 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApiWeb", "CoreApiWeb\CoreApiWeb.csproj", "{3C561BFA-B159-412B-B740-F9E63C7C61DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uibasoft.BaseLab.Application", "Uibasoft.BaseLab.Application\Uibasoft.BaseLab.Application.csproj", "{D39584DD-04F5-4D38-98B9-35AAA8D38BAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uibasoft.BaseLab.Dominio", "Uibasoft.BaseLab.Dominio\Uibasoft.BaseLab.Dominio.csproj", "{E7CD65C5-DA2D-423E-9A41-D27F58514943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uibasoft.BaseLab.Services", "Uibasoft.BaseLab.Services\Uibasoft.BaseLab.Services.csproj", "{B14A259E-3C3A-4189-8852-94C3A3A081BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uibasoft.BaseLab.Repository", "Uibasoft.BaseLab.Repository\Uibasoft.BaseLab.Repository.csproj", "{0CDC8BBD-789A-4FED-B546-BE6DA67FD993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uibasoft.BaseLab.DataAccess", "Uibasoft.BaseLab.DataAccess\Uibasoft.BaseLab.DataAccess.csproj", "{6C4EC77C-CC7B-4BDD-88CB-EC6AC5004B65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uibasoft.BaseLab.Abstractions", "Uibasoft.BaseLab.Abstractions\Uibasoft.BaseLab.Abstractions.csproj", "{E227948D-08B4-44AC-A058-1983E06BE521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +27,30 @@ Global
 		{3C561BFA-B159-412B-B740-F9E63C7C61DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C561BFA-B159-412B-B740-F9E63C7C61DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C561BFA-B159-412B-B740-F9E63C7C61DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D39584DD-04F5-4D38-98B9-35AAA8D38BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39584DD-04F5-4D38-98B9-35AAA8D38BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39584DD-04F5-4D38-98B9-35AAA8D38BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39584DD-04F5-4D38-98B9-35AAA8D38BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CD65C5-DA2D-423E-9A41-D27F58514943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CD65C5-DA2D-423E-9A41-D27F58514943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CD65C5-DA2D-423E-9A41-D27F58514943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CD65C5-DA2D-423E-9A41-D27F58514943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14A259E-3C3A-4189-8852-94C3A3A081BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14A259E-3C3A-4189-8852-94C3A3A081BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14A259E-3C3A-4189-8852-94C3A3A081BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14A259E-3C3A-4189-8852-94C3A3A081BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CDC8BBD-789A-4FED-B546-BE6DA67FD993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CDC8BBD-789A-4FED-B546-BE6DA67FD993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CDC8BBD-789A-4FED-B546-BE6DA67FD993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDC8BBD-789A-4FED-B546-BE6DA67FD993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4EC77C-CC7B-4BDD-88CB-EC6AC5004B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4EC77C-CC7B-4BDD-88CB-EC6AC5004B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4EC77C-CC7B-4BDD-88CB-EC6AC5004B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4EC77C-CC7B-4BDD-88CB-EC6AC5004B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E227948D-08B4-44AC-A058-1983E06BE521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E227948D-08B4-44AC-A058-1983E06BE521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E227948D-08B4-44AC-A058-1983E06BE521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E227948D-08B4-44AC-A058-1983E06BE521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

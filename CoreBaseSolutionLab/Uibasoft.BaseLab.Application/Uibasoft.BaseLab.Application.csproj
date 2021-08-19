@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Uibasoft.BaseLab.Dominio\Uibasoft.BaseLab.Dominio.csproj" />
+    <ProjectReference Include="..\Uibasoft.BaseLab.Repository\Uibasoft.BaseLab.Repository.csproj" />
+    <ProjectReference Include="..\Uibasoft.BaseLab.Services\Uibasoft.BaseLab.Services.csproj" />
+  </ItemGroup>
+
+</Project>
