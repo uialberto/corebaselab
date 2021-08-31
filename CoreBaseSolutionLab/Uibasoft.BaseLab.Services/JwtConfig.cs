@@ -2,7 +2,8 @@
 
 namespace Uibasoft.BaseLab.Services
 {
-    public class Class1
+    public class JwtConfig
     {
+        public string Secret { get; set; }
     }
 }
