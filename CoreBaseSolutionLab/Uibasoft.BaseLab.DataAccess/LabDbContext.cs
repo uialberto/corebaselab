@@ -10,8 +10,6 @@ namespace Uibasoft.BaseLab.DataAccess
 {
     public class LabDbContext : DbContext
     {
-
-
         public LabDbContext()
         {
         }

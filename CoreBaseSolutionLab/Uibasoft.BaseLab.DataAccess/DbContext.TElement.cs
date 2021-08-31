@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 using Uibasoft.BaseLab.Abstractions;
 
 namespace Uibasoft.BaseLab.DataAccess
-{
-    // Cuando se quiera cambiar el contexto de Base de Datos de EF Propiamente Dicho (LabDBContext) Se crea un nuevo contexto por uno diferente.
+{    
     public class DbContext<TElement> : IDbContext<TElement> where TElement : class, IEntity
     {
         DbSet<TElement> _elements;
